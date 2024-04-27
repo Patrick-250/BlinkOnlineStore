@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+           
+            margin: 20px auto; /* Center the form horizontally */
+            padding: 20px; /* Add padding inside the form */
+            background-color: lightgray; /* Set a background color */
+            border-radius: 10px; /* Round the corners of the container */
+           
+        }
+
+        /* Styling for form elements */
+        label {
+            font-size: 1.2em; /* Increase font size for better readability */
+            font-weight: bold; /* Make label text bold */
+            margin-top: 10px; /* Add spacing above labels */
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; /* Ensure input fields take the full width */
+            padding: 10px; /* Add padding inside the input fields */
+            font-size: 1em; /* Increase font size for better readability */
+            border: 1px solid #ccc; /* Add a border */
+            border-radius: 5px; /* Round the corners */
+            margin-top: 10px; /* Add spacing above fields */
+        }
+
+        /* Styling for the submit button */
+        input[type="submit"] {
+            padding: 10px 20px; /* Larger padding for the button */
+            font-size: 1.2em; /* Larger font size */
+            background-color: #333; /* Dark background color */
+            color: white; /* White text for contrast */
+            border: none; /* Remove border */
+            border-radius: 15px; /* Round the corners */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            margin-top: 20px; /* Add spacing above the submit button */
+        }
+
+        /* Change the button's background color on hover */
+        input[type="submit"]:hover {
+            background-color: #555; /* Darken the color on hover */
+        }
+    </style>
+      
+      
+    </style>
+  </head>
+  <body style="background-color: darkgoldenrod;"
+  >
+ 
+    <div class="container">
+      <h2>Contact us</h2>
+      <form action="/submit-contact-form" method="POST">
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+        <label for="email">Your Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+</html>
