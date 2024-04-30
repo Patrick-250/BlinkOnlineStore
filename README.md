@@ -19,7 +19,7 @@ The Online Shopping Store is a web-based platform that allows customers to shop 
 - Admin panel for managing products, orders, and users
 
 ## Technologies Used
-- Front-end: HTML, CSS, JavaScript (React/Angular/Vue/etc.)
+- Front-end: HTML, CSS, JavaScript (React/etc.)
 - Back-end: Node.js, Express, 
 - Database: MongoDB, PostgreSQL, MySQL, etc.
 - Authentication: JWT, OAuth, 
