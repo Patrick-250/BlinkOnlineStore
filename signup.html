@@ -45,19 +45,25 @@
     </style>
   </head>
 <body>
-  <h1>create your account</h1><br>
-  <form method="post">
-    <label for="name">Name</label><br>
-    <input type="text" name="Full name" placeholder="Full name" id="name"><br>
-    <label for="email">Email</label><br>
-    <input type="email" name="E-mail" placeholder="Email address" id="email"><br>
-    <label for="Phone">Phone </label><br>
-    <input type="tel" name="Phone Number" placeholder="Phone Number" id="Phone"><br>
-    <label for="password">Password</label><br>
-    <input type="password" name="Password" placeholder="at least 8 characters" id="password"><br>
-    <label for="password">Re-enter your Password</label><br>
-    <input type="password" name="Password" placeholder="re-enter your password"><br>
-    <input type="submit" value="sign up">
+  <h1>Create Your Account</h1>
+  <form method="post" action="/signup" onsubmit="return validateSignup()">
+      <label for="name">Name</label><br>
+      <input type="text" name="name" placeholder="Full name" id="name" required><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" name="email" placeholder="Email address" id="email" required><br>
+
+      <label for="phone">Phone</label><br>
+      <input type="tel" name="phone" placeholder="Phone number" id="phone" required><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" name="password" placeholder="At least 8 characters" id="password" minlength="8" required><br>
+
+      <label for="password-confirm">Re-enter Password</label><br>
+      <input type="password" name="password-confirm" placeholder="Re-enter your password" id="password-confirm" minlength="8" required><br>
+
+      <input type="submit" value="Sign Up">
+  </form>
 
 
 
@@ -67,6 +73,11 @@
 
 
   </form>
+  <script src="signup.js">
+
+
+
+  </script>
 
 
 </body>
